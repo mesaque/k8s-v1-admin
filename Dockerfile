@@ -4,7 +4,7 @@ MAINTAINER Team Maintainers "mesaque.s.silva@gmail.com"
 
 ENV DEBIAN_FRONTEND noninteractive
 
-ADD * /var/www/html/
+COPY / /var/www/html/
 
 ADD infrastructure/init.sh /init/init.sh
 ADD infrastructure/nginx/ /usr/local/openresty/nginx/conf
