@@ -1,27 +1,30 @@
 # k8s-v1-admin
 
 ## Hot to configure Kubernets on GCP
-```sh
-// creating a cluster & nodes
-// auto scalling vertical
+
+### creating a cluster & nodes
+> auto scalling vertical
+```
 gcloud container clusters create k8s-v1-admin  --labels=environment=production,v=1,operator=mesaquesilva --min-nodes=2 --max-nodes=13 --enable-autoscaling --node-labels=environment=production
-
-// creating a controller
+```
+> creating a controller
+```
 kubectl create -f k8s/deployment/admin-prod.yaml
-// creating a service
+```
+> creating a service
+```
 kubectl create -f k8s/service/admin-prod.yaml
-
-// scalling / horizontal
-// manual
+```
+> scalling / horizontal (manual / automatic)
+```
 kubectl scale deployment/admin --replicas=6
-// automatic
 kubectl autoscale deployment/admin --min=1 --max=15
+```
 
-
-// deploy/update image
-// when editing change the commit hash
+> deploy/update image ( when editing change the commit hash )
+```
 kubectl edit deployment/admin
-
+```
 
 ## How to manager contexts
 //list context
