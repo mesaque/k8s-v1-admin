@@ -1,6 +1,6 @@
 # kubernetes admin sample app version 1
 
-what we are going to do? we will build an app completely scalable vertically and horizontally using a kubernetes infrastructure design, so get tighten your belts and enjoy the learning situation.
+what we are going to do? we will build an app completely scalable vertically and horizontally on top of a workflow managed by GCP using a kubernetes infrastructure design, so get tighten your belts and enjoy the learning situation.
 
 ![K8s Flow Draw](infrastructure/k8s.png?raw=true "K8s Flow Draw")
 
@@ -13,6 +13,15 @@ There are a things you need to have configured in your machine to get the comman
  - [minikube](https://kubernetes.io/docs/tasks/tools/install-minikube/)
  - [gcp account activated](https://cloud.google.com/)
 
+### What you will do
+
+Resume of all ours steps we will:
+
+ - Create a Cluster and a Node
+ - Create a k8s infrastrure
+ - Versioned you have a Dockerfile sample
+ - Versioned you have an APP sample
+ - Build a Workflow
 
 ## How to configure Kubernets on GCP
 

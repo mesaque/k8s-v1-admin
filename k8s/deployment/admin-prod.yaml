@@ -17,7 +17,7 @@ spec:
         app: admin
     spec:
       containers:
-        - image: gcr.io/apikihost/github-mesaque-k8s-v1-admin:a6ba9c239787290ac8e4698ff7832158a59e53b8
+        - image: gcr.io/apikihost/github-mesaque-k8s-v1-admin:3c870a5c491866c820968007d703ae2c2d82069d
           name: admin
           ports:
             - containerPort: 80
