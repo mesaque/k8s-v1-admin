@@ -27,12 +27,13 @@ kubectl edit deployment/admin
 ```
 
 ## How to manager contexts
-//list context
+>list context
+```
 kubectl config get-contexts
-
-//change context from minikube to anything
+```
+> change context from minikube to anything
+```
 kubectl config use-context minikube
-
 ```
 
 ## How to configure minikube to access gcr
