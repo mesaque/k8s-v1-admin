@@ -20,10 +20,10 @@ $app->get('/cryptocurrency/{name}', function ($request, $response, $args) {
 $app->get('/weather/{zipcode}', function ($request, $response, $args) {
 
 	//http://api.openweathermap.org/data/2.5/weather?appid=3ae974851721111da5d957e6eb3082af&zip=35022280,br
-	//zip=35022280,br
+	//zip=94040,us
 
-	$json = json_decode( file_get_contents( 'http://api.openweathermap.org/data/2.5/weather?appid=3ae974851721111da5d957e6eb3082af&zip=' .$args['zipcode'] ) );
-    return $response->getBody()->write(  $json );
+	$json =  file_get_contents( 'http://api.openweathermap.org/data/2.5/weather?appid=3ae974851721111da5d957e6eb3082af&zip=' .$args['zipcode'] );
+    return $response->getBody()->write( $json );
 });
 
 
