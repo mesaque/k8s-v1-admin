@@ -15,13 +15,16 @@ There are a things you need to have configured in your machine to get the comman
 
 ### What you will do
 
-Resume of all ours steps we will:
+Resume of all ours steps, we will:
 
  - Create a Cluster and a Node
- - Create a k8s infrastrure
- - Versioned you have a Dockerfile sample
- - Versioned you have an APP sample
+ - Create a k8s infrastructure
+ - Versioned we have a Dockerfile sample
+ - Versioned we have an APP sample
  - Build a Workflow
+
+
+### Fork the project to configure a Cloud Version for your own use.
 
 ## How to configure Kubernets on GCP
 
