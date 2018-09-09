@@ -2,6 +2,8 @@
 
 what we are going to do? we will build an app completely scalable vertically and horizontally using a kubernetes infrastructure design, so get tighten your belts and enjoy the learning situation.
 
+![K8s Flow Draw](infrastructure/k8s.png?raw=true "K8s Flow Draw")
+
 ### Prerequisites
 
 There are a things you need to have configured in your machine to get the commands going right.
