@@ -8,7 +8,7 @@ $app->get('/hello/{name}', function ($request, $response, $args) {
 
 
 $app->get('/saymyname/{name}', function ($request, $response, $args) {
-    return $response->getBody()->write("Seu nome é: , " . $args['name']);
+    return $response->getBody()->write("Seu nome é: --->> " . $args['name']);
 });
 
 $app->get('/date/', function ($request, $response, $args) {
