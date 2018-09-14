@@ -93,7 +93,7 @@ kubectl --namespace=k8s-v1-admin create secret docker-registry gcr-json-key \
 3.  RUN: 
 ```
 kubectl --namespace=k8s-v1-admin patch serviceaccount default \
-          -p '{"imagePullSecrets": [{"name": "gcr"}]}'
+          -p '{"imagePullSecrets": [{"name": "gcr-json-key"}]}'
 ```
 4. Now you have access to your gcr images
 ```
